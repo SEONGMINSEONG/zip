@@ -2,10 +2,20 @@
 
 void PrintNumber(int a)
 {
-    int thousand = a / 1000;
+    int tenThousand = a / 10000;
+    int thousand = (a / 1000) % 10;
     int hundred = (a / 100) % 10;
     int ten = (a / 10) % 10;
     int one = a % 10;
+
+    if (tenThousand > 0)
+    {
+        if (tenThousand > 1)
+        {
+            std::cout << tenThousand;
+        }
+        std::cout << "만 ";
+    }
 
     if (thousand > 0)
     {
