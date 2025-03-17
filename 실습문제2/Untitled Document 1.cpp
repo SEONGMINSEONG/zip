@@ -8,29 +8,20 @@ void PrintNumber(int a)
     int ten = (a / 10) % 10;
     int one = a % 10;
 
-    if (tenThousand > 0) {
-        std::cout << tenThousand << "만 ";
-    }
+   
+    std::cout << tenThousand << "만 ";
 
-    if (thousand > 0) {
-        std::cout << thousand << "천 ";
-    }
+    
+    std::cout << thousand << "천 ";
 
-    if (hundred > 0) {
-        std::cout << hundred << "백 ";
-    }
+    
+    std::cout << hundred << "백 ";
 
-    if (ten > 0) {
-        std::cout << ten << "십 ";
-    }
+    
+    std::cout << ten << "십 ";
 
-    if (one > 0) {
-        std::cout << one;
-    }
-
-    if (a == 0) {
-        std::cout << "0";
-    }
+    
+    std::cout << one;
 
     std::cout << std::endl;
 }
@@ -38,7 +29,7 @@ void PrintNumber(int a)
 int main()
 {
     int a;
-    std::cout << "숫자를 입력하세요: ";
+    std::cout << "Enter a number: ";
     std::cin >> a;
     PrintNumber(a);
     return 0;
